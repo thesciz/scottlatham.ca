@@ -42,8 +42,9 @@
     <script>
       console.log("I'm not doing anything interesting back here.");
       console.log("Booooring old website stuff.");
-      var p = document.querySelector('p');
-      var wisdom = [
+      console.log("Should probably head on home.");
+      const p = document.querySelector('p');
+      const wisdom = [
         "so much <i>synergy</i>",
         "leveraging leverage",
         "chaotic neutral",
@@ -70,11 +71,11 @@
       document.querySelector('p').innerHTML = wisdom[Math.floor(Math.random()*wisdom.length)];
 
       setInterval(function() {
-        var wisdomNugget = wisdom[Math.floor(Math.random()*wisdom.length)];
-        var htmlNugget = document.createElement('p');
+        const wisdomNugget = wisdom[Math.floor(Math.random()*wisdom.length)];
+        const htmlNugget = document.createElement('p');
         htmlNugget.innerHTML = wisdomNugget;
 
-        var rotater = document.querySelector('.rotater');
+        const rotater = document.querySelector('.rotater');
         rotater.appendChild(htmlNugget);
         rotater.children[0].className='vanish';
         setTimeout(function() { rotater.children[0].remove() }, 500);
