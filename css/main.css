@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+  background: radial-gradient(#fff, #ced2ff);
+  margin: 0;
+  padding: 0; }
+  html.error {
+    background: radial-gradient(#fff, #ff6e6e); }
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0 auto;
+  display: table;
+  color: #353535; }
+  .container a {
+    color: #353535; }
+  .container .mid {
+    display: table-cell;
+    vertical-align: middle; }
+    .container .mid p {
+      padding: 16px;
+      margin: 0;
+      -webkit-transition: 0.5s all;
+      transition: 0.5s all; }
+    .container .mid .vanish {
+      margin-top: -51px; }
+    .container .mid .rotater {
+      height: 51px;
+      overflow: hidden; }
+  .container h1 {
+    font-size: 4em;
+    margin: 0;
+    font-weight: 100; }
+    .container h1 span {
+      font-weight: 500; }
